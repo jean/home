@@ -17,16 +17,20 @@ Version control and automatic management for user files in `$HOME`
 
 ## Overview
 
-[home] uses [GNU Stow] and [Git] to manage revision controlled files in your home directory (.dotfiles, scripts, etc). Stow is used to automatically maintain all the symbolic links in the user's `$HOME` directory that resolve to actual revision controlled files in the `HOME` directory of this repository.
+[home] uses [GNU Stow] and [Git] to manage revision controlled files in your home directory (.dotfiles, scripts, etc).
+Stow is used to automatically maintain all the symbolic links in the user's `$HOME` directory that resolve to actual revision controlled files in the `HOME` directory of this repository.
 
 In addition, there are some other goodies included (like my [Terminal.app](#terminalapp) profile for Mac).
 
 
 ## Motivation
 
-I wanted to be able to keep track of all the random files that end up in my `$HOME` directories on the machines I work on. To avoid turning my `$HOME` directory into a repository itself, I needed to isolate these files in a subdirectory of my `$HOME` directory (i.e. `$HOME/.home`), but I didn't want to have to manually manage symbolic links between the two.  It turns out that Stow works perfectly for this type of thing, hence the dependency on Stow.
+I wanted to be able to keep track of all the random files that end up in my `$HOME` directories on the machines I work on.
+To avoid turning my `$HOME` directory into a repository itself, I needed to isolate these files in a subdirectory of my `$HOME` directory (i.e. `$HOME/.home`), but I didn't want to have to manually manage symbolic links between the two.
+It turns out that Stow works perfectly for this type of thing, hence the dependency on Stow.
 
-Obviously, you probably don't want to use my personal files "as is" on your own machine, so the idea with this repository is that it can serve as an example workflow that you can emulate or fork for your own purposes.
+Obviously, you probably don't want to use my personal files "as is" on your own machine,
+so the idea with this repository is that it can serve as an example workflow that you can emulate or fork for your own purposes.
 
 
 ## Setup
@@ -59,7 +63,10 @@ Obviously, you probably don't want to use my personal files "as is" on your own 
     cd .home
     ```
 
-* Run `setup.sh` to install the git `post-commit` hook. This will also automatically create symlinks between the files in `$HOME/.home/HOME/` and your `$HOME` directory.  It will prompt for permission to move (adopt) any real files in `$HOME` (i.e. existing `.profile`, `.bashrc`, etc) into the `$HOME/.home/HOME/` directory, and replace them with a symlink (see [How it works](#how-it-works) below).
+* Run `setup.sh` to install the git `post-commit` hook.
+  This will also automatically create symlinks between the files in `$HOME/.home/HOME/` and your `$HOME` directory.
+  It will prompt for permission to move (adopt) any real files in `$HOME` (i.e. existing `.profile`, `.bashrc`, etc)
+  into the `$HOME/.home/HOME/` directory, and replace them with a symlink (see [How it works](#how-it-works) below).
 
     ```bash
     ./setup.sh

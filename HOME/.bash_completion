@@ -1,0 +1,3 @@
+for f in "$HOME/etc/bash_completion.d/"* ; do
+    . "$f"
+done

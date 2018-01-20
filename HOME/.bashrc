@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/env bash
 
 #njj START
-export PATH=$HOME/.local/bin:$HOME/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/bin:$PATH:$HOME/go/bin
 export MANPATH=$HOME/share/man:$HOME/.local/share/man:$MANPATH
 export TMPDIR="/data/data/com.termux/files/tmp"
 

@@ -26,6 +26,9 @@ shopt -s dirspell
 #  !(pattern-list) -- Matches anything except one
 shopt -s extglob
 
+# append to the history file, don't overwrite it
+shopt -s histappend
+
 # Why isn't bash-it handling this?
 case "$TERM" in
     screen*)

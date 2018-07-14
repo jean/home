@@ -1,0 +1,18 @@
+[user]
+	email = jean.jordaan@gmail.com
+	name = Jean Jordaan
+[hub]
+	username = jean
+	oauthtoken = f5568d35533b8795650f7c1130da824df5410477
+[core]
+	excludesfile = /data/data/com.termux/files/home/.gitignore
+[init]
+	templatedir = ~/.git_template
+[alias]
+	ctags = !.git/hooks/ctags
+[git-up "rebase"]
+	log-hook = "echo \"changes on $1:\"; git log --oneline --decorate $1..$2"
+	show-hashes = true
+	arguments = --preserve-merges
+[url "git@github.com:"]
+	insteadOf = https://github.com/

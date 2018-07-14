@@ -32,5 +32,7 @@ data.location=~/.task
 # UDAs
 uda.trelloid.type=string
 uda.trelloid.label=Trello ID
+uda.trellocardname.type=string
+uda.trellocardname.label=Trello Card Name
 uda.trellolistname.type=string
 uda.trellolistname.label=Trello List Name

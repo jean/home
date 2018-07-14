@@ -472,14 +472,9 @@ if command -v pipenv >/dev/null 2>&1; then
     eval "$(pipenv --completion)"
 fi
 
-<<<<<<< HEAD
 # ----------------------------------------------------------------------------
 # pew Bash completion
 # ----------------------------------------------------------------------------
-=======
-# Set this to the command you use for todo.txt-cli
-# export TODO="t"
->>>>>>> ef4d997... Don't have todo.txt-cli installed and dislike aliases
 
 if command -v pew >/dev/null 2>&1; then
   source "$(dirname $(pew shell_config))"/complete.bash

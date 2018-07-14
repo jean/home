@@ -1,3 +1,5 @@
+#!/data/data/com.termux/files/usr/bin/env bash
+
 # The Bash personal interactive initialization file
 # (only read by a Bash shell that's both interactive and non-login)
 
